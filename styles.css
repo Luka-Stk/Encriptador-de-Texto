@@ -139,3 +139,67 @@ button {
 #copy-btn:hover {
     background-color: #e1e1e1;
 }
+
+/* Media Queries para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-section, .output-section {
+        flex: 1;
+        width: 100%;
+    }
+
+    textarea {
+        height: 250px;
+    }
+
+    button {
+        padding: 12px 15px;
+        margin: 0 5px;
+    }
+
+    #output-text {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        margin: 0;
+    }
+
+    #output-text {
+        height: 150px;
+    }
+}
